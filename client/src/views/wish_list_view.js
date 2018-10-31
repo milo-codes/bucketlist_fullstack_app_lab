@@ -1,7 +1,7 @@
 const PubSub = require("../helpers/pub_sub.js");
-const WishView = require("./views/wish_view.js");
+const WishView = require("./wish_view.js");
 
-const WishListView = function(container) => {
+const WishListView = function(container) {
   this.container = container;
 };
 

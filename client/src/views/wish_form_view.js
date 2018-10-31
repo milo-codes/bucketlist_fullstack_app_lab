@@ -22,7 +22,6 @@ WishFormView.prototype.createWish = function(form) {
     title: form.title.value,
     blurb: form.blurb.value,
     deadline: form.deadline.value,
-    complete: form.complete.value
   };
 
   return newWish;
