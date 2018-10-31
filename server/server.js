@@ -2,13 +2,13 @@ const MongoClient = require("mongodb").MongoClient;
 const createRouter = require("./helpers/create_router.js");
 const express = require('express');
 const app = express();
-// const parser = require("body-parser");
+const parser = require("body-parser");
 // const path = require("path");
 
 // const publicPath = path.join(__dirname, "../client/public");
 // app.use(express.static(publicPath));
 
-// app.use(parser.json());
+app.use(parser.json());
 
 MongoClient.connect("mongodb://localhost:27017")
   .then((client) => {
